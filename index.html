@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Off Road Motors</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo"><span>Off Road Motors</span></div>
+  <ul class="menu">
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#vip">Sala VIP</a></li>
+    <li><a href="#galeria">Galeria</a></li>
+    <li><a href="#agendamento">Agendamento</a></li>
+    <li><a href="#localizacao">Localização</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+
+  <div class="hero-bg">
+    <img src="galeria/foto1.jpg" class="bg active">
+    <img src="galeria/foto2.jpg" class="bg">
+    <img src="galeria/foto3.jpg" class="bg">
+  </div>
+
+  <!-- OVERLAY VERMELHO + CINZA -->
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>Off Road Motors</h1>
+    <p>Tecnologia, conforto e confiança para o seu veículo</p>
+    <a href="#agendamento" class="btn">Agendar Serviço</a>
+  </div>
+
+</section>
+
+<section id="servicos" class="reveal">
+  <h2>Nossos Serviços</h2>
+  <div class="cards">
+    <div class="card">Revisão Completa</div>
+    <div class="card">Troca de Óleo</div>
+    <div class="card">Freios e Suspensão</div>
+    <div class="card">Diagnóstico Computadorizado</div>
+    <div class="card">Alinhamenro e Balanceamento</div>
+    <div class="card">Injeção Diesel</div>
+  </div>
+</section>
+
+<section id="vip" class="reveal">
+  <div class="vip">
+    <h2>Sala VIP para Clientes</h2>
+    <p>Wi-Fi, café, TV e conforto enquanto cuidamos do seu carro.</p>
+  </div>
+</section>
+
+<section id="galeria" class="reveal">
+  <h2>Galeria da Oficina</h2>
+
+  <div class="carrossel">
+
+    <div class="carrossel-track">
+
+      <img src="galeria/foto1.jpg" alt="">
+      <img src="galeria/foto2.jpg" alt="">
+      <img src="galeria/foto3.jpg" alt="">
+      <img src="galeria/foto4.jpg" alt="">
+      <img src="galeria/foto5.jpg" alt="">
+      <img src="galeria/foto6.jpg" alt="">
+
+      <!-- DUPLICAÇÃO PARA LOOP INFINITO -->
+
+      <img src="galeria/foto1.jpg" alt="">
+      <img src="galeria/foto2.jpg" alt="">
+      <img src="galeria/foto3.jpg" alt="">
+      <img src="galeria/foto4.jpg" alt="">
+      <img src="galeria/foto5.jpg" alt="">
+      <img src="galeria/foto6.jpg" alt="">
+
+    </div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="fecharImagem()">
+  <img id="img-grande">
+</div>
+
+<section id="agendamento" class="reveal">
+  <h2>Agende seu Horário</h2>
+
+  <form id="formAgendamento">
+
+    <input type="text" id="nome" placeholder="Seu nome" required />
+
+    <input type="tel" id="telefone" placeholder="Seu telefone" required />
+
+    <input type="text" id="veiculo" placeholder="Modelo do veículo" required />
+
+    <textarea id="servico" rows="4" placeholder="Descreva o serviço" required></textarea>
+
+    <button type="submit" class="btn">
+      Enviar Agendamento
+    </button>
+
+  </form>
+
+  <div id="mensagemConfirmacao" class="mensagem-confirmacao">
+  ✅ Agendamento enviado com sucesso!
+</div>
+
+</section>
+
+<section id="localizacao" class="reveal">
+  <h2>Onde Estamos</h2>
+  <p class="endereco">Rua Antilhon Ribeiro Soares, 4680</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18" loading="lazy"></iframe>
+</section>
+
+<footer>
+  © 2026 Off Road Motors - Todos os direitos reservados
+</footer>
+
+<a href="https://wa.me/5586998020011" class="whatsapp" target="_blank">WhatsApp</a>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
